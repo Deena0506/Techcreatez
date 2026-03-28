@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Createz</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="navbar">  
+
+  <div class="logo">
+    <img src="logo.webp" alt="logo">
+    <h2>Tech <span>Createz</span></h2>
+  </div>
+
+  <nav id="nav-menu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#order">Order</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="order-btn" onclick="scrollToOrder()">Order Now</button>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <p class="tag">WE BUILD YOUR DIGITAL IDENTITY</p>
+
+  <h1>
+    Transform Your Ideas <br/>
+    into <span>Digital Reality</span>
+  </h1>
+
+  <p class="subtext">
+    From stunning portfolios to eye-catching posters - we craft digital
+    experiences that make you stand out. Affordable, creative, and delivered fast.
+  </p>
+
+  <div class="hero-buttons">
+    <button class="primary"  onclick="scrollToOrder()">Get Started</button>
+
+    <button class="secondary"  onclick="scrollToServices()">Our Services</button>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="services">
+  <h2>Our <span>Services</span></h2>
+  <p class="service-sub">
+    Premium digital services crafted with creativity and precision.
+  </p>
+
+  <div class="card-container">
+
+    <div class="card">
+      <h3>Resume Building</h3>
+      <p>Professional resumes that get you noticed by top employers.</p>
+      <span class="price">Starting at ₹299</span>
+      <button class="primary"  onclick="scrollToOrder()">Order Now</button>
+    </div>
+
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Stunning personal websites to showcase your work and skills.</p>
+      <span class="price">Starting at ₹999</span>
+      <button class="primary"  onclick="scrollToOrder()">Order Now</button>
+    </div>
+
+    <div class="card">
+      <h3>Birthday Special Websites</h3>
+      <p>Unique digital birthday experiences for your loved ones.</p>
+      <span class="price">Starting at ₹499</span>
+      <button class="primary"  onclick="scrollToOrder()">Order Now</button>
+    </div>
+
+    <div class="card">
+      <h3>Poster Designing</h3>
+      <p>Eye-catching posters for events, social media, and marketing.</p>
+      <span class="price">Starting at ₹199</span>
+      <button class="primary"  onclick="scrollToOrder()">Order Now</button>
+    </div>
+
+    <div class="card">
+      <h3>Invitation Designing</h3>
+      <p>Beautiful digital invitations for weddings, parties, and events.</p>
+      <span class="price">Starting at ₹249</span>
+      <button class="primary"  onclick="scrollToOrder()">Order Now</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Order Section -->
+<section id="order" class="order">
+  <h2>Place Your <span>Order</span></h2>
+  <p>Fill in the details and we'll get back to you within 24 hours.</p>
+
+  <form class="order-form">
+    
+    <label>Name</label>
+    <input type="text" id="name" placeholder="Your full name">
+
+    <label>Email</label>
+    <input type="email" id="email" placeholder="you@email.com">
+
+    <label>Phone Number</label>
+    <input type="number" id="number" placeholder="+91 XXXXX XXXXX">
+
+    <label>Select Service</label>
+    <select id="service">
+      <option>Choose a service</option>
+      <option>Resume</option>
+      <option>Portfolio</option>
+      <option>Birthday Website</option>
+      <option>Poster Designing</option>
+      <option>Invitation Designing</option>
+    </select>
+
+    <label>Description / Requirements</label>
+    <textarea id="message" placeholder="Tell us what you need..."></textarea>
+
+    <button type="submit">Submit Order</button>
+
+  </form>
+</section>
+
+
+<section id="about" class="about">
+  <h2>About <span>Tech Createz</span></h2>
+
+  <p class="about-text">
+    We are a passionate team of designers and developers dedicated to building your digital identity.
+    Whether you need a professional resume, a personal portfolio, or creative designs - we deliver excellence at unbeatable prices.
+  </p>
+
+  <div class="about-cards">
+
+    <div class="about-card">
+      <div class="icon">⚡</div>
+      <h3>Creative Excellence</h3>
+      <p>Unique designs that make your brand unforgettable.</p>
+    </div>
+
+    <div class="about-card">
+      <div class="icon">₹</div>
+      <h3>Affordable Pricing</h3>
+      <p>Premium quality at prices that fit every budget.</p>
+    </div>
+
+    <div class="about-card">
+      <div class="icon">🚀</div>
+      <h3>Fast Delivery</h3>
+      <p>Quick turnarounds without compromising on quality.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Get in <span>Touch</span></h2>
+  <p>Have questions? Reach out to us - we'd love to hear from you.</p>
+
+  <div class="contact-info">
+    <span>📧 deenadhayal96@gmail.com</span>
+    <span>📞 +91 93445 47363</span>
+    <button class="whatsapp" onclick="openWhatsApp()">WhatsApp Us</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-left">
+    <img src="logo.webp" alt="logo">
+    <span>Tech <b>Createz</b></span>
+  </div>
+
+
+  <p>© 2026 Tech Createz. All rights reserved.</p>
+</footer>
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
