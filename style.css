@@ -235,8 +235,11 @@ nav a:hover::after {
   background: #111827;
   padding: 30px;
   border-radius: 15px;
-  width: 280px;
+  width: 100%;
+  max-width: 420px;
   text-align: left;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .card h3 {
@@ -260,6 +263,12 @@ nav a:hover::after {
   padding: 8px 15px;
   border-radius: 8px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
 }
 
 /* Order */
