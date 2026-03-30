@@ -34,4 +34,6 @@ document.querySelector(".order-form").addEventListener("submit", function(e){
   });
 
   alert("Order Sent!");
+
+  this.reset();
 });
