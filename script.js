@@ -113,6 +113,12 @@ function scrollToOrder() {
   });
 }
 
+// Scroll to Services
+function scrollToServices() {
+  document.getElementById("services").scrollIntoView({
+    behavior: "smooth"
+  });
+}
 function openWhatsApp() {
   const phone = "+919344547363"; // your number without +
   const message = "Hi, I want to know more about your services";
